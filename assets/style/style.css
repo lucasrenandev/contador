@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #6e6e6e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease;
+}
+
+body.active { /* classe ACTIVE adicionada via javascript */
+    
+    background-color: #3b3b3b;
+}
+
+.container {
+    width: 400px;
+    height: 250px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.container .icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: lightblue;
+    border-radius: 50%;
+    top: 12px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.container .icon::before {
+    content: '\f186';
+    font-family: fontawesome;
+}
+
+body.active .icon::before {
+    content: '\f185';
+}
+
+.container .text {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.container .text h1 {
+    margin-bottom: 12px;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+.container .contador {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.container .buttons {
+    margin-top: 12px;
+}
+
+.container .buttons button {
+    padding: 12px;
+    margin: 0 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #add8e6;
+}
+
+.container .buttons button:nth-child(1) {
+    background-color: #008000;
+    color: #ffffff;
+}
+
+.container .buttons button:nth-child(2) {
+    background-color: #67bcf1;
+}
+
+.container .buttons button:nth-child(3) {
+    background-color: #ff0000;
+    color: #ffffff;
+}
