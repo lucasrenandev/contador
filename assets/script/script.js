@@ -22,7 +22,7 @@ zerar.addEventListener("click", () => {
     cont.innerHTML = contador = 0
 })
 
-// FUNÇÃO DARK MODE
+// DARK MODE
 icon.addEventListener("click", () => {
     body.classList.toggle("active")
 })
