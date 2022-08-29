@@ -8,19 +8,32 @@ const icon = container.querySelector(".icon")
 const body = document.querySelector("body")
 
 let contador = 0
-cont.innerHTML = contador
 
 incremento.addEventListener("click", () => {
     cont.innerHTML = ++contador
+    Colors()
 })
 
 decremento.addEventListener("click", () => {
     cont.innerHTML = --contador
+    Colors()
 })
 
 zerar.addEventListener("click", () => {
     cont.innerHTML = contador = 0
 })
+
+function Colors() {
+    if(contador > 0) {
+        cont.style.color = "green"
+    }
+    else if(contador < 0) {
+        cont.style.color = "red"
+    }
+    else {
+        cont.style.color = "black"
+    }
+}
 
 // DARK MODE
 icon.addEventListener("click", () => {
