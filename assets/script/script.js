@@ -21,6 +21,7 @@ decremento.addEventListener("click", () => {
 
 zerar.addEventListener("click", () => {
     cont.innerHTML = contador = 0
+    Colors()
 })
 
 function Colors() {
